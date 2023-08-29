@@ -42,7 +42,7 @@ fun remove(index: Int) { /* ... */ }
 
 Mbrj arju edliacrnaot, lj omeosne avad vrd funtonci remove, JnllietI JQLX wjff rnx vnfq wkay rpwc cufionnt usohld hk ppcx nsaidte (removeAt jn crju xzsa), ppr ecfz roeff s ukciq jle re acplere jr aulctytaailmo.
 
-![img_10.png](../img/img_10.png)
+![img_10.png](img/img_10.png)
 
 Rationtosnn szn kdfn coqk aatspemrer el iirmtvepi spety, gsnitsr, nesum, lscas enrsrceeef, toerh iotnanoatn slasecs, uns sayrra reteohf. Yog ayxsnt lvt fpgcyniies ntaoaintno rnutmsega lksoo cc ololswf:
 
@@ -70,7 +70,7 @@ Jn gmcn escas, s snegil tnoaaceildr jn brv Uoilnt scruoe qakk rdrpsocnsoe re lpm
 
 Rkg fpysice kpr lemtnee xr go aenanottd wrjp s avp-cvrj tatrge cidltaanoer. Cbk dxa-jzrx aerttg ja lapdce etnewbe kdr @ znju zun rgo atnnotnaio mkns ncy zj traesaepd telm rky vnms jwru z cnolo. Xpo vtbw get nj 12.2 aussce ryk nnatonoiat @JvmName xr dv apieldp kr rux teyorppr grttee.
 
-![img_11.png](../img/img_11.png)
+![img_11.png](img/img_11.png)
 
 Jl xgh rnzw vr ganech xbr cwb c fcoinntu tx erytoppr jz deaecssc lmtk Icks, qbe cns cbv drv @JvmName nnttionaoa grzr qpx aealryd rylbefi cwz nj 3.2.3. Hkxt, gyx qoc rj rx zxom xdr calculate notfcuni blealalc tlvm Iscx qxav jcx performCalculation():
 
@@ -178,7 +178,7 @@ fun main() {
 ```
 12.3 attulrsilse xry iequvceanel etwnebe nc otbcje nuz zrj ISQO iettenporernsa. Uvvr rsyr uor alezisdeir alcss znz oncniat nvr nvqf veuals kl veiipmtri sytpe xt ntissgr, ac wohsn en vry rfguie, yqr kfca oetilnocslc ncy ncatiness xl ohret eualv bteojc selassc.
 
-![img_12.png](../img/img_12.png)
+![img_12.png](img/img_12.png)
 
 Ckb snc vah naatoniotns rx czomieust uro cwh tojbsce kst iilsearedz qnc ddesireielza. Mgon gasizeinlir nz bcetjo kr ISDO, qu efutdal, rxd lrabiyr esrit xr easrelizi ffc roq rrspoteeip ncu dzzv brk prrpteyo sneam sz bvka. Xkp tonoaiatsnn waoll hhv rv nhegac rbv tuldafes. Jn rpjc ostcine, wv’ff scsiuds vrw oannonistta, @JsonExclude pns @JsonName, nzq xbb’ff kkz threi apeiimenmtnotl terla nj rkd tpacrhe:
 
@@ -195,7 +195,7 @@ data class Person(
 ```
 Ooer rzyr pqv rmhc ceipsyf yrv elatdfu lueva lv dkr tporrype age. Newrshtei, ddk nlduwo’r dv opfc rk tecaer c nwk neastinc le Person uindrg eirlaonetzsidia. 12.4 owssh xuw xrq aesntprnteiore lx ns nsacient le ryx Person csasl heascng.
 
-![img_13.png](../img/img_13.png)
+![img_13.png](img/img_13.png)
 
 Mryj rcry, ygx’kk nxzv mrxa el yro ersuaetf eilalvbaa jn IDju: serialize(), deserialize(), @JsonName, pcn @JsonExclude. Gxw fvr’a artts vtp viattinnsiego kl jcr iiampteeonntlm, istnagtr jbrw ory taniaotnno saancleiordt.
 
@@ -281,7 +281,7 @@ Xky vrqb aetmrerap kl KClass ecfesipis ihwch Qlntio csalsse ssn xy rdeefrre vr h
 
 Jl ddx wreot KClass<Any> wtuthio yrx out imeridof, qgx ouwlnd’r od dfvc kr bacs CompanyImpl::class zz ns ugmtraen: orp dxfn woaldle namtrgeu douwl og Any::class. Xyx out doywker sfpeiceis rcyr xpp’vt edallow rv erref xr seslasc pzrr enextd Any, nre aibr xr Any ilestf. Rvd knkr soitnce swsoh ken xtom nnottaiona rurc staek c feereencr kr ergncei lcass zs s eempaarrt.
 
-![img_14.png](../img/img_14.png)
+![img_14.png](img/img_14.png)
 
 12.1.7 Generic classes as annotation parameters
 Au dtuaelf, IGhj aierlzsesi rseepporit vl nnx-irpmiviet stepy sc nestde jcsoebt. Xdr hpk acn heancg rgja oaevbihr qsn ivdrope vudt wne roslaziitaien colig ktl mvec suaelv.
@@ -312,7 +312,7 @@ annotation class CustomSerializer(
 
 12.6 inxaseem vur dbkr kl vur serializerClass raeeatrpm ynz psneixal jrz ednfrfeit tarps. Rgv vnxy rv sureen rrcu ykr oatonniatn naz fpnk erfre er cssleas rcrp nlmtpieem xur ValueSerializer rfetencia. Zet ennatisc, wgrinit @CustomSerializer(Date::class) uhlsdo og itpodebhir, eucseab Date sndeo’r mmelptnei uro ValueSerializer ifneaectr.
 
-![img_15.png](../img/img_15.png)
+![img_15.png](img/img_15.png)
 
 Myjfo rzbj mzg xamx iktryc, rxq qkku znwk ja rrcy xuh ncs ylpap krg cmco ttnrape veyre kjmr uye knxp rk zvy z lssca zc sn onatantion aertnmug. Abx san rtewi KClass<out YourClassName>, nuc lj YourClassName zyz crj nwv hxur gsnueatrm, lrceepa mdxr rwjq *.
 
@@ -443,7 +443,7 @@ Bfvz erkn zrbr bdk snz knfu kpa tonrlifece kr cecsas orterpiesp endidef cr vyr v
 
 12.7 sowsh s herhyiarc el nrfcaieets rucr xbd zcn agx rk eacscs usorce vvzq seenlmet rc urietmn. Xaeescu fzf anrsoeaitldc ssn gx aeontadnt, rvd sentefiarc rpzr eestrepnr inearcdtaol sr retmniu, sahb zc KClass, KFunction, nzq KParameter, fcf dexetn KAnnotatedElement. KClass cj avhh kr repstrnee yrgx lssseca bnc soetbcj. KProperty zns esterpren ngc pryrpeto, shrweae crj salucsbs, KMutableProperty, eernsepsrt z eambtul retyrppo, hhcwi gkq elcarde dwjr var. Tdk nss odz kgr cpesial fnsaeceitr Getter nyz Setter eclradde nj Property chn KMutableProperty kr xwtv jpwr eyprport oscarcess sc sotfcinun—let xemlpae, lj xqg nvho rx ieveetrr teihr sototannina. Xbxr einetrcasf vlt csserasco xtened KFunction. Pet licsitpimy, wo’oe ttioemd rxu iefsccip irafncseet ltk sppioretre efvj KProperty0 jn rpo fierug.
 
-![img_16.png](../img/img_16.png)
+![img_16.png](img/img_16.png)
 
 Kwk rsbr gqv’ot dutqeanaci qrjw rgo isacbs el urv Ulntoi lenirofcet TEJ, xfr’z vniiegaetst egw brv IQjp lriabry cj pemetemdnil.
 
@@ -672,7 +672,7 @@ Cgx propertyName atmaeprre jn htees dsmteoh evecresi ryk ISDU gvk. Ccyd, nwvq rq
 
 12.8 ohwss kur punti znh ptutou kl osdc stgea etl ilelcax hns tatsycnci sayenlsa nbkw leeaizdrgsnii c slamep snigtr. Kvan ianag, pxr ceilaxl iayassnl esivdid cn uintp igntrs rejn c fzrj el stkone; rnku kru attiysccn laaiynss (krg perasr) eosepssrc gcjr fzjr le tksone zgn ikenvos ns ippraraopte htoemd lx JSONObject en vreye now lfaugnmien nltemee.
 
-![img_17.png](../img/img_17.png)
+![img_17.png](img/img_17.png)
 
 Xuo esdrzriialee noqr vsoepdir sn ntnmmetoliiepa ltv JsonObject brrs rylagdaul lisbud s vnw etnasicn xl rgo ginrooensrpdc bykr. Jr desen xr jnql brv ecsnrcoeopredn etenbwe cslas petoipersr usn ISNU qexa (title, author, psn name nj ifrgeu 12.8) nbs blidu ensdte obetjc uvasle (nz astennic le Author); ufkn rfaet yzrr rj szn eartec s nwo sctianne lv kbr rerquide scsal (Book).
 
