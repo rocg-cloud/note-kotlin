@@ -100,6 +100,10 @@
   margin: 8px 0;
 }
 
+.custom-block.details summary::marker{
+  content: ''
+}
+
 .custom-block a {
   color: inherit;
   font-weight: 600;

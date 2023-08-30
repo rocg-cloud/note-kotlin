@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "vitepress-doc-zh"
+  name: "learn-kotlin"
   text: "文档"
   tagline: My great project tagline
   actions:
