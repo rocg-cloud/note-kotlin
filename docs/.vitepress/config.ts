@@ -53,6 +53,11 @@ export default defineConfig({
       copyright: 'Copyright © 2023 备案号：<a href="https://beian.miit.gov.cn/">京****号</a>',
     },
 
+    outline: {
+      level: [2, 6],
+      label: '目录'
+    }
+
     //本地搜索
     // search: {
     // },
