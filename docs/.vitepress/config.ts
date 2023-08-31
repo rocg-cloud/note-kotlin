@@ -2,7 +2,7 @@ import {DefaultTheme, defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: `/kotlin-in-action-doc/`,
+  base: "/note-kotlin/",
   title: "kotlin-in-action",
   description: "kotlin-in-action",
 
