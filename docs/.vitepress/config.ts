@@ -22,7 +22,7 @@ export default defineConfig({
 
     //侧边栏
     sidebar: {
-      '/tool-kotlin/': sidebarKotlin()
+      '/tool-kotlin/': { base: '/tool-kotlin/', items: sidebarKotlin() }
     },
 
     //社交链接
