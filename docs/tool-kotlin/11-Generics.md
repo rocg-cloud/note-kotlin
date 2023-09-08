@@ -33,9 +33,10 @@ val authors = listOf("Sveta", "Seb", "Dima", "Roman")
 
 Because the two values passed to the `listOf` function are both strings, the compiler infers that you’re creating a `List<String>`.
 
-Figure 11.1. Optional inlay hints in IntelliJ IDEA and Android Studio help visualize inferred generic types.
+::: info Figure 11.1. Optional inlay hints in IntelliJ IDEA and Android Studio help visualize inferred generic types.
 
 ![img.png](img/img.png)
+:::
 
 On the other hand, if you need to create an empty list, there’s nothing from which to infer the type argument, so you need to specify it explicitly. In the case of creating a list, you have a choice between specifying the type as part of the variable declaration and specifying a type argument for the function that creates a list. The following example shows how this is done:
 
@@ -65,10 +66,10 @@ If you’re going to write a function that works with a list, and you want it to
 
 Most of the library functions working with collections are generic. For example, let’s look at the `slice` function declaration, shown in 11.2. This function returns a list containing only elements at indices in the specified range.
 
-Figure 11.2. The generic function `slice` has the type parameter `T`, allowing it to work lists of arbitrary elements. This type parameter is used both in the receiver type of the extension function, and the return type of the function.
+::: info Figure 11.2. The generic function `slice` has the type parameter `T`, allowing it to work lists of arbitrary elements. This type parameter is used both in the receiver type of the extension function, and the return type of the function.
 
 ![img_1.png](img/img_1.png)
-
+:::
 
 The function’s type parameter `T` is used in the receiver type and in the return type; both of them are `List<T>`. When you call such a function on a specific list, you can specify the type argument explicitly. But in almost all cases you don’t need to, because the compiler infers it, as shown next.
 
@@ -188,9 +189,10 @@ When you specify a type as an upper bound constraint for a type parameter of a g
 
 To specify a constraint, you put a colon after the type parameter name, followed by the type that’s the upper bound for the type parameter; see 11.3. In Java, you use the keyword `extends` to express the same concept: `<T extends Number> T sum(List<T> list)`.
 
-Figure 11.3. Constraints are defined by specifying an upper bound after a type parameter. In this case, the `sum` function is constrained to lists of a type whose upper bound is `Number`.
+::: info Figure 11.3. Constraints are defined by specifying an upper bound after a type parameter. In this case, the `sum` function is constrained to lists of a type whose upper bound is `Number`.
 
 ![img_2.png](img/img_2.png)
+:::
 
 This function invocation is allowed because the actual type argument (`Int` in the following example) extends the `Number` interface from the Kotlin standard library:
 
@@ -215,6 +217,8 @@ println(oneHalf(3))
 ```
 
 Now let’s write a generic function that finds the maximum of two items. Because it’s only possible to find a maximum of items that can be compared to each other, you need to specify that in the signature of the function. Here’s how you do that. You constrain the `max` function to accept parameters `first` and `second` of type `T`, and constrain `T` to implement `Comparable<T>`, which ensures that only objects that can be compared to `T` can be used:
+
+Listing 11.3. Declaring a function with a type parameter constraint
 
 ```kotlin
 //Listing 11.3. Declaring a function with a type parameter constraint

@@ -9,6 +9,7 @@ export const myThink = [
 
 export const workJava = [
     { text: 'Java', link: '0release' },
+    { text: 'MySQL', link: '0mysql' },
 ]
 
 export const workVue = [
