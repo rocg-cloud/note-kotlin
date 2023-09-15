@@ -218,10 +218,9 @@ println(oneHalf(3))
 
 Now let’s write a generic function that finds the maximum of two items. Because it’s only possible to find a maximum of items that can be compared to each other, you need to specify that in the signature of the function. Here’s how you do that. You constrain the `max` function to accept parameters `first` and `second` of type `T`, and constrain `T` to implement `Comparable<T>`, which ensures that only objects that can be compared to `T` can be used:
 
-Listing 11.3. Declaring a function with a type parameter constraint
+::: info Listing 11.3. Declaring a function with a type parameter constraint
 
 ```kotlin
-//Listing 11.3. Declaring a function with a type parameter constraint
 fun <T: Comparable<T>> max(first: T, second: T): T { 
     return if (first > second) first else second
 }
@@ -231,6 +230,7 @@ fun main() {
     // kotlin
 }
 ```
+:::
 
 When you try to call `max` on incomparable items, the code won’t compile:
 
@@ -409,14 +409,16 @@ Effectively, you need to include a `*` for every type parameter the type has. We
 
 Note that you can still use normal generic types in `as` and `as?` casts. But the cast won’t fail if the class has the correct base type and a wrong type argument, because the type argument isn’t known at runtime when the cast is performed. Because of that, the compiler will emit an "unchecked cast" warning on such a cast. It’s only a warning, so you can later use the value as having the necessary type, as shown next.
 
+::: info Listing 11.5. Using a type cast with a generic type
+
 ```kotlin
-//Listing 11.5. Using a type cast with a generic type
 fun printSum(c: Collection<*>) {
     val intList = c as? List<Int>
         ?: throw IllegalArgumentException("List is expected")
     println(intList.sum())
 }
 ```
+:::
 
 Everything compiles fine: the compiler only issues a warning, which means this code is legitimate. If you call the `printSum` function on a list or a set of integers, it works as expected: it prints a sum in the first case and throws an `IllegalArgumentException` in the second case:
 
@@ -442,8 +444,9 @@ Let’s discuss the exception that’s thrown if you call the `printSum` functio
 
 Note that the Kotlin compiler is smart enough to allow `is` checks when the corresponding type information is already known at compile time.
 
+::: info Listing 11.6. Using a type check with a known type argument
+
 ```kotlin
-//Listing 11.6. Using a type check with a known type argument
 fun printSum(c: Collection<Int>) {
     when (c) {
         is List<Int> -> println("List sum: ${c.sum()}")
@@ -458,6 +461,7 @@ fun main() {
     // Set sum: 12
 }
 ```
+:::
 
 In 11.6, the check whether `c` has type `List<Int>` is possible because you know at compile time that this collection (no matter whether it’s a list or another kind of collection) contains integer numbers—unlike the example you saw in 11.5, where no information about the type was available.
 
@@ -508,7 +512,8 @@ You say that you’re interested in strings only, by specifying `<String>` as a 
 
 Here’s a simplified version of the declaration of `filterIsInstance` from the Kotlin standard library.
 
-Listing 11.9. A simplified implementation of `filterIsInstance`
+::: info Listing 11.9. A simplified implementation of `filterIsInstance`
+
 ```kotlin
 inline fun <reified T>
         Iterable<*>.filterIsInstance(): List<T> {
@@ -521,6 +526,7 @@ inline fun <reified T>
     return destination
 }
 ``` 
+:::
 
 ::: info WHY REIFICATION WORKS FOR INLINE FUNCTIONS ONLY
 

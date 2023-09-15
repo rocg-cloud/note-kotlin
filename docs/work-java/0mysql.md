@@ -31,3 +31,29 @@ SELECT TIMESTAMPDIFF(MONTH, '2023-09-08', '2023-08-20'); --  0
 :::
 
 
+## 分页
+
+::: code-group
+
+```java
+    /**
+     * @param query       检索条件
+     * @param currentPage 当前页数
+     * @param pageSize    每页显示记录数
+     */
+    private void buildPageLimit(CardExtend query, Integer currentPage, Integer pageSize) {
+        Integer offset = (currentPage - 1) * pageSize; //偏移量
+        Integer startRow = offset + pageSize;          //起始
+        query.setStartRow(startRow); 
+        query.setOffset(offset);   
+    }
+```
+
+```sql
+    select t.msisdn, t.iccid
+    from iotc_card t
+    where t.card_status = 1
+      limit ${card.startRow}, ${card.offset}
+```
+
+:::

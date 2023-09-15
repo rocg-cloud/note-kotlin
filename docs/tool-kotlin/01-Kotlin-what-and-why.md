@@ -2,11 +2,11 @@
 
 ::: tip This chapter covers
 
-- A basic <u>demonstration</u><ShowS>`示例` </ShowS> of Kotlin
-- The main <u>traits</u><ShowS>`特点`</ShowS> of the Kotlin language
-- <u>Possibilities</u><ShowS>`发展潜力`</ShowS> for server-side and Android development
-- A glimpse into Kotlin Multiplatform
-- What <u>distinguishes</u><ShowS>`区别，辨别`</ShowS> Kotlin from other languages
+- <u>Kotlin 的基本示范</u><ShowS>`A basic demonstration of Kotlin`</ShowS>
+- <u>Kotlin 语言的主要特征</u><ShowS>`The main traits of the Kotlin language`</ShowS>
+- <u>服务端和Android开发的可能性</u><ShowS>`Possibilities for server-side and Android development`</ShowS>
+- <u>KMP 一瞥</u><ShowS>`A glimpse into Kotlin Multiplatform`</ShowS>
+- <u>Kotlin 与其他语言的区别</u><ShowS>`What distinguishes Kotlin from other languages`</ShowS>
 - Writing and running code in Kotlin
 
 :::
