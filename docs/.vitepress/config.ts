@@ -1,5 +1,6 @@
 import {DefaultTheme, defineConfig} from 'vitepress'
-import {toolKotlin, toolPython, workJava, workVue, myThink, bookKinA} from "./mySidebar";
+import {toolKotlin, toolPython, workJava, workVue, myThink, bookKinA, bookBlender} from "./mySidebar";
+import {myNav} from "./myNav";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,15 +19,16 @@ export default defineConfig({
   //主题配置  https://vitepress.dev/reference/default-theme-config
   themeConfig: {
     //导航栏
-    nav: nav(),
+    nav: myNav,
     //侧边栏
     sidebar: {
-      'tool-kotlin': { base: 'tool-kotlin', items: toolKotlin },
-      'tool-python': { base: 'tool-python', items: toolPython },
-      'work-java': { base: 'work-java', items: workJava },
-      'work-vue': { base: 'work-vue', items: workVue },
-      'my-think': { base: 'my-think', items: myThink },
-      'itBook': { base: 'KinA', items: bookKinA },
+      '/work-java/': { base: '/work-java/', items: workJava },
+      '/work-vue/': { base: '/work-vue/', items: workVue },
+      '/tool-kotlin/': { base: '/tool-kotlin/', items: toolKotlin },
+      '/tool-python/': { base: '/tool-python/', items: toolPython },
+      '/my-think/': { base: '/my-think/', items: myThink },
+      '/itBook/KinA/': { base: '/itBook/KinA/', items: bookKinA },
+      '/itBook/blender4manual/': { base: '/itBook/blender4manual/', items: bookBlender },
     },
     //社交链接
     socialLinks: [
@@ -44,32 +46,3 @@ export default defineConfig({
     }
   }
 })
-
-function nav(): DefaultTheme.NavItem[] {
-  return [
-    {
-      text: 'work',
-      activeMatch: `^/(work-java|work-vue)/`,
-      items: [
-        { text: 'Java', link: '/work-java/0release' },
-        { text: 'Vue', link: '/work-vue/00' },
-      ]
-    },
-    {
-      text: 'tool',
-      activeMatch: `^/(tool-kotlin|tool-python)/`,
-      items: [
-        { text: 'kotlin', link: '/tool-kotlin/FxGl' },
-        { text: 'python', link: '/tool-python/00' },
-      ]
-    },
-    {
-      text: 'book',
-      activeMatch: `^/(itBook)/`,
-      items: [
-        { text: 'KinA', link: '/itBook/KinA/01-Kotlin-what-and-why' },
-      ]
-    },
-    { text: 'think', link: '/my-think/0vitepress', activeMatch: '/my-think/' },
-  ]
-}
