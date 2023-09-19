@@ -40,6 +40,11 @@ export const toolPython = [
 ]
 
 export const toolKotlin = [
+    { text: 'FxGl', link: 'FxGl' },
+    { text: 'KMP', link: 'KMP' },
+]
+
+export const bookKinA = [
     {
         text: 'PART 1: Introducing kotlin',
         collapsed: false,

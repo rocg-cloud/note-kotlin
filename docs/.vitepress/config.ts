@@ -1,5 +1,5 @@
 import {DefaultTheme, defineConfig} from 'vitepress'
-import { toolKotlin, toolPython, workJava, workVue, myThink } from "./mySidebar";
+import {toolKotlin, toolPython, workJava, workVue, myThink, bookKinA} from "./mySidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,11 +21,12 @@ export default defineConfig({
     nav: nav(),
     //侧边栏
     sidebar: {
-      '/tool-kotlin/': { base: '/tool-kotlin/', items: toolKotlin },
-      '/tool-python/': { base: '/tool-python/', items: toolPython },
-      '/work-java/': { base: '/work-java/', items: workJava },
-      '/work-vue/': { base: '/work-vue/', items: workVue },
-      '/my-think/': { base: '/my-think/', items: myThink },
+      'tool-kotlin': { base: 'tool-kotlin', items: toolKotlin },
+      'tool-python': { base: 'tool-python', items: toolPython },
+      'work-java': { base: 'work-java', items: workJava },
+      'work-vue': { base: 'work-vue', items: workVue },
+      'my-think': { base: 'my-think', items: myThink },
+      'itBook': { base: 'KinA', items: bookKinA },
     },
     //社交链接
     socialLinks: [
@@ -58,8 +59,15 @@ function nav(): DefaultTheme.NavItem[] {
       text: 'tool',
       activeMatch: `^/(tool-kotlin|tool-python)/`,
       items: [
-        { text: 'kotlin', link: '/tool-kotlin/01-Kotlin-what-and-why' },
+        { text: 'kotlin', link: '/tool-kotlin/FxGl' },
         { text: 'python', link: '/tool-python/00' },
+      ]
+    },
+    {
+      text: 'book',
+      activeMatch: `^/(itBook)/`,
+      items: [
+        { text: 'KinA', link: '/itBook/KinA/01-Kotlin-what-and-why' },
       ]
     },
     { text: 'think', link: '/my-think/0vitepress', activeMatch: '/my-think/' },
