@@ -294,9 +294,35 @@ Developers have been building these kinds of applications on the JVM for many ye
 
 In this environment especially, Kotlin profits from its seamless interoperability with existing Java code. Regardless of whether you're writing a new component or migrating the code of an existing service to Kotlin, Kotlin will fit right in. You won't run into problems when you need to extend Java classes in Kotlin or annotate the methods and fields of a class in a certain way. And the benefit is that the code of your system will be more compact, more reliable, and easier to maintain.
 
-Another big advantage of using Kotlin is better reliability for your application. Kotlin's type system, with its precise tracking of null values, makes the problem of null pointer exceptions much less pressing. Most of the code that would lead to a NullPointerException at runtime in Java fails to compile in Kotlin, ensuring that you fix the error before the application gets to the production environment.
+<ShowL>
+<template v-slot:hide>
+<div class="custom-show-hide">
+
+Another big advantage of using Kotlin is better reliability for your application. Kotlin's type system, with its precise tracking of `null` values, makes the problem of `null` pointer exceptions much less pressing. Most of the code that would lead to a `NullPointerException` at runtime in Java fails to compile in Kotlin, ensuring that you fix the error before the application gets to the production environment.
+
+</div>
+</template>
+<template v-slot:show>
+
+使用 Kotlin 的另一大优势是应用程序具有更好的可靠性。 Kotlin 的类型系统凭借其对“null”值的精确跟踪，使得“null”指针异常问题不再那么紧迫。大多数在 Java 运行时导致“NullPointerException”的代码无法在 Kotlin 中编译，确保您在应用程序进入生产环境之前修复错误。
+
+</template>
+</ShowL>
+
+<ShowL>
+<template v-slot:hide>
+<div class="custom-show-hide">
 
 Modern frameworks, such as Spring (https://spring.io/), provide first-class support for Kotlin out of the box. Beyond the seamless interoperability, these frameworks include additional extensions and make use of techniques which that make it feel as if they were designed for Kotlin in the first place.
+
+</div>
+</template>
+<template v-slot:show>
+
+现代框架，例如 Spring (https:spring.io)，为 Kotlin 提供一流的开箱即用支持。除了无缝的互操作性之外，这些框架还包括额外的扩展和使用的技术，这些技术让人感觉它们最初是为 Kotlin 设计的。
+
+</template>
+</ShowL>
 
 In this example, you're defining a simple Spring Boot application, that serves a list of `Greeting` objects, consisting of an ID and some text, as JSON via HTTP. Concepts from the Spring framework transfer directly to Kotlin: you use the same annotations (`@SpringBootApplication`, `@RestController`, `@GetMapping`) as you would when using Java:
 
